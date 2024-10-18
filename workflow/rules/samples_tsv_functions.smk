@@ -15,15 +15,15 @@ def get_input_filename(wildcards, forward_or_reverse):
 
 def get_forward_filename(wildcards):
     """Get the forward read for a given sample and library"""
-    return get_input(wildcards, "forward_filename")
+    return get_input_filename(wildcards, "forward_filename")
 
 
 def get_reverse_filename(wildcards):
     """Get the reverse read for a given sample and library"""
-    return get_input(wildcards, "reverse_filename")
+    return get_input_filename(wildcards, "reverse_filename")
 
 
-def get_adapter_filename(wildcards, forward_or_reverse):
+def get_adapter(wildcards, forward_or_reverse):
     """Get forward or reverse adapter"""
     assert forward_or_reverse in ["forward_adapter", "reverse_adapter"]
     return samples[
