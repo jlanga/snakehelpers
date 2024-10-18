@@ -1,0 +1,3 @@
+include: "rules/samples_tsv_functions.smk"
+include: "rules/fastqc.smk"
+include: "rules/samtools.smk"
