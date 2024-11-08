@@ -1,3 +1,8 @@
 include: "rules/samples_tsv_functions.smk"
 include: "rules/fastqc.smk"
 include: "rules/samtools.smk"
+
+
+rule test:
+    input:
+        fastqc="resources/reads_1_fastqc.gz",
