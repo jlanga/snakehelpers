@@ -58,3 +58,14 @@ rule samtools__stats_bam:
         "{prefix}.stats.log",
     wrapper:
         "v4.7.2/bio/samtools/stats"
+
+
+rule samtools__index_fa:
+    input:
+        fa="{prefix}.fa",
+    output:
+        "{prefix}.fa.fai",
+    log:
+        "{prefix}.fa.fai.log",
+    wrapper:
+        "v4.7.2/bio/samtools/faidx"
