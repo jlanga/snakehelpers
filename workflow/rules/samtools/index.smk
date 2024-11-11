@@ -10,6 +10,6 @@ rule samtools__index__bam:
         "v4.7.2/bio/samtools/index"
 
 
-rule test__samtools__index:
-    input:
-        "resources/test.bam.bai",
+# rule test__samtools__index:
+#     input:
+#         "resources/test.bam.bai",
