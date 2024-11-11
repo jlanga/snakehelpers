@@ -5,6 +5,5 @@ include: "rules/samtools.smk"
 
 rule test:
     input:
-        rules.test_fastqc.input,
-        rules.test_samtools_bam.input,
-        rules.test_samtools_fa.input,
+        rules.fastqc__test.input,
+        rules.samtools__test.input,

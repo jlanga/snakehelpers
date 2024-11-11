@@ -13,6 +13,6 @@ rule fastqc:
         "v4.7.2/bio/fastqc"
 
 
-rule test_fastqc:
+rule fastqc__test:
     input:
         "resources/test_fastqc.html",
