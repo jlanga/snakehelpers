@@ -1,0 +1,8 @@
+.snakemake
+resources/**.fai
+resources/**.bai
+resources/**.txt
+resources/**.tsv
+resources/**.log
+resources/**.gzi
+resources/**_fastqc*

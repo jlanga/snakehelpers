@@ -5,4 +5,6 @@ include: "rules/samtools.smk"
 
 rule test:
     input:
-        fastqc="resources/reads_1_fastqc.gz",
+        rules.test_fastqc.input,
+        rules.test_samtools_bam.input,
+        rules.test_samtools_fa.input,

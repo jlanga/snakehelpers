@@ -69,3 +69,18 @@ rule samtools__index_fa:
         "{prefix}.fa.fai.log",
     wrapper:
         "v4.7.2/bio/samtools/faidx"
+
+
+rule test_samtools_bam:
+    input:
+        "resources/test.bam.bai",
+        "resources/test.idxstats.tsv",
+        "resources/test.flagstats.txt",
+        "resources/test.stats.tsv",
+
+
+rule test_samtools_fa:
+    input:
+        "resources/test.fa.fai",
+        "resources/test.fa.gz.fai",
+        "resources/test.fa.gz.gzi",

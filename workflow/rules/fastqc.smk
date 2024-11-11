@@ -11,3 +11,8 @@ rule fastqc:
         extra="--quiet",
     wrapper:
         "v4.7.2/bio/fastqc"
+
+
+rule test_fastqc:
+    input:
+        "resources/test_fastqc.html",
