@@ -23,6 +23,7 @@ use rule * from helpers as helpers__*
 
 This will add all the rules in this repo to yours so you don't need ever to write again `samtools index {input.bam}`
 
+This repo handles dependencies via [snakemake-wrappers](https://snakemake-wrappers.readthedocs.io/)
 
 ## Implemented helpers
 
