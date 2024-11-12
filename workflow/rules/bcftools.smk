@@ -1,0 +1,1 @@
+include: "bcftools/index.smk"
