@@ -57,7 +57,6 @@ jobs:
             --cores 3
             --conda-cleanup-pkgs cache
             --latency-wait 10
-            test
 
       - uses: actions/upload-artifact@v4
         if: failure()
