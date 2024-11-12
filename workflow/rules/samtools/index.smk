@@ -19,6 +19,8 @@ rule samtools__index__cram:
     log:
         "{prefix}.cram.crai.log",
     conda:
+        "../../environments/samtools.yml"
+    shell:
         """
         samtools index \
             {input} \
