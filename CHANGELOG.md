@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/jlanga/snakehelpers/compare/v1.0.0...v1.0.1) (2024-11-12)
+
+
+### Bug Fixes
+
+* remove fastqc test ([78bb4ca](https://github.com/jlanga/snakehelpers/commit/78bb4ca348d887183a7ad5dbfc9a67db54029103))
+
 ## 1.0.0 (2024-11-11)
 
 
