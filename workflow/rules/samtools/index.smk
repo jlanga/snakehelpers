@@ -10,6 +10,17 @@ rule samtools__index__bam:
         "v4.7.2/bio/samtools/index"
 
 
-# rule test__samtools__index:
-#     input:
-#         "resources/test.bam.bai",
+rule samtools__index__cram:
+    """Index a cram file"""
+    input:
+        "{prefix}.cram",
+    output:
+        "{prefix}.cram.crai",
+    log:
+        "{prefix}.cram.crai.log",
+    conda:
+        """
+        samtools index \
+            {input} \
+        > {log} 2>&1
+        """
