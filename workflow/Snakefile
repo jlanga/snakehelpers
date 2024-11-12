@@ -2,9 +2,4 @@
 include: "rules/bcftools.smk"
 include: "rules/fastqc.smk"
 include: "rules/samtools.smk"
-
-
-# rule test:
-#     input:
-#         rules.fastqc__test.input,
-#         rules.samtools__test.input,
+include: "rules/tabix.smk"
