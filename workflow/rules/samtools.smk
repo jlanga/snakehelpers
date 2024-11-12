@@ -1,5 +1,6 @@
+include: "samtools/dict.smk"
 include: "samtools/faidx.smk"
 include: "samtools/flagstats.smk"
 include: "samtools/idxstats.smk"
-include: "samtools/stats.smk"
 include: "samtools/index.smk"
+include: "samtools/stats.smk"
