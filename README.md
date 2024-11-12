@@ -21,16 +21,18 @@ module helpers:
 use rule * from helpers as helpers__*
 ```
 
-This will add all the rules in this repo to yours so you don't need ever to write again `samtools index {input.bam}`
+This will add all the rules in this repo to yours so you don't need ever to write again a rule to do `samtools index {input.bam}`
 
-This repo handles dependencies via [snakemake-wrappers](https://snakemake-wrappers.readthedocs.io/)
+This repo handles dependencies via [snakemake-wrappers](https://snakemake-wrappers.readthedocs.io/) as much as possible.
 
 ## Implemented helpers
 
 - `fastqc`
 - `samtools`
-  - `index` - bam
+  - `index` - bam, cram
   - `faidx` - fa, fa.gz
-  - `stats` - bam
+  - `stats` - bam, cram
   - `idxstats` - bam
   - `flagstats` - bam
+- `bcftools`
+  - `index` - vcf.gz
