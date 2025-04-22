@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.2.0](https://github.com/jlanga/snakehelpers/compare/v1.1.0...v1.2.0) (2025-04-22)
+
+
+### Features
+
+* gtf, gff, simplify combinations of extensions ([1900ccc](https://github.com/jlanga/snakehelpers/commit/1900cccbdc11da7486b6cb04d5e664249e7932e1))
+* simplify combinations of files, add gtf ([6d36b4f](https://github.com/jlanga/snakehelpers/commit/6d36b4f140f34e6a97354e42ad4df85d3a99cfee))
+
+
+### Bug Fixes
+
+* add conda env to tabix ([5766643](https://github.com/jlanga/snakehelpers/commit/5766643c9ee39ba697d306890c5ef8894155f587))
+* fix path ([3d2925a](https://github.com/jlanga/snakehelpers/commit/3d2925afef8c9e3a20bddb3e87efc333e123715a))
+* fix path ([3c1e1e7](https://github.com/jlanga/snakehelpers/commit/3c1e1e7b9725af35c9255e7f12370ed9caa19a59))
+* fix path ([54b3a4f](https://github.com/jlanga/snakehelpers/commit/54b3a4feb89c0078c3146fce4053400413276a8a))
+* import tabix ([ee96dcc](https://github.com/jlanga/snakehelpers/commit/ee96dcc987a063bd03148058d672ad583f6aa7d9))
+
 ## [1.1.0](https://github.com/jlanga/snakehelpers/compare/v1.0.1...v1.1.0) (2024-11-12)
 
 
