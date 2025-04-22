@@ -10,6 +10,8 @@ for extension in ["gtf", "gff"]:
             f"{{prefix}}.{extension}.gz.tbi",
         log:
             f"{{prefix}}.{extension}.gz.tbi.log",
+        conda:
+            "../../environments/htslib.yml"
         shell:
             """
             tabix \
