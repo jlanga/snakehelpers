@@ -2,4 +2,4 @@
 include: "rules/bcftools.smk"
 include: "rules/fastqc.smk"
 include: "rules/samtools.smk"
-include: "rules/tabix.smk"
+include: "rules/htslib.smk"
