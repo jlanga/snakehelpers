@@ -11,7 +11,7 @@ for extension in ["gtf", "gff"]:
         log:
             f"{{prefix}}.{extension}.gz.tbi.log",
         conda:
-            "../environments/htslib.yml"
+            "workflow/environments/htslib.yml"
         shell:
             """
             tabix \
