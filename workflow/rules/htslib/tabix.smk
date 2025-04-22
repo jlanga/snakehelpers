@@ -10,12 +10,18 @@ for extension in ["gtf", "gff"]:
             f"{{prefix}}.{extension}.gz.tbi",
         log:
             f"{{prefix}}.{extension}.gz.tbi.log",
-        conda:
-            "../../environments/htslib.yml"
-        shell:
-            """
-            tabix \
-                --preset gff \
-                {input} \
-            2> {log} 1>&2
-            """
+        params:
+            "--preset gff",
+        wrapper:
+            "v4.7.2/bio/tabix/index"
+
+
+# conda:
+#     "../../environments/htslib.yml"
+# shell:
+#     """
+#     tabix \
+#         --preset gff \
+#         {input} \
+#     2> {log} 1>&2
+#     """
