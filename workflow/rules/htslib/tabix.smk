@@ -3,7 +3,7 @@ for extension in ["gtf", "gff"]:
     rule:
         """Index a GTF/GFF file with tabix"""
         name:
-            f"tabix__{extension}gz"
+            f"htslib__tabix__{extension}gz"
         input:
             f"{{prefix}}.{extension}.gz",
         output:
@@ -11,7 +11,7 @@ for extension in ["gtf", "gff"]:
         log:
             f"{{prefix}}.{extension}.gz.tbi.log",
         conda:
-            "../environments/htslib.yml"
+            "../../environments/htslib.yml"
         shell:
             """
             tabix \
